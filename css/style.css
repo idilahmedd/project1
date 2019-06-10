@@ -1,0 +1,144 @@
+
+/* .icard {
+
+    position: absolute;
+    padding: 10px;
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    display: inline-block;
+    top: 0;
+    left: 0;
+  }
+
+  .cardtop {
+    font-size: 2em;
+    height: 40px;
+    line-height: 0.7em;
+  }
+
+  .cardmid {
+    text-align: center;
+    font-size: 5em;
+    height: 110px;
+  }
+
+  .cardbottom {
+    font-size: 2em;
+    height: 50px;
+    line-height: 0.7em;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+  }
+
+  .hearts .suit::after{ content: '\2665'; }
+  .spades .suit::after{ content: '\2660'; }
+  .clubs .suit::after{ content: '\2663'; }
+  .diams .suit::after{ content: '\2666'; }
+  .spades, .clubs{color:black;}
+  .hearts, .diams{color:red;}
+  .hand {
+    position: relative;
+  }
+
+  .players {
+    float: left;
+    width: 49%;
+    min-height: 300px;
+    border: 1px solid #ddd;
+  }
+  
+  
+  .btn{
+    border-radius: 5px;
+    padding:9px 20px;
+    color:white;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+  }
+  #btnBattle{
+    background-color: red;
+  }
+  #btnBattle10{
+    background-color: blue;
+  }
+  #btnBattle50{
+    background-color: green;
+  } */
+
+header {
+    text-align: center;
+    color: maroon;
+}
+body {
+  background-image: url(cards.jpeg);
+  background-size:cover;
+  background-attachment: fixed; 
+  
+}
+#background {
+  
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100vh;
+  
+}
+
+p {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px solid maroon;
+  border-radius: 8px;
+  color: maroon;
+  font-size: 22px;
+}
+h2 {
+  text-align: center;
+  color: maroon;
+}
+a {
+  text-align: center;
+  font-size: 22px;
+  border: 6px solid maroon;
+  border-radius: 10px;
+  text-decoration: none;
+  text-decoration-color: none;
+  background-color: bisque;
+  color: maroon;
+  
+}
+.levels {
+  text-align: center;
+}
+.gridBoard {
+  border: 5px solid maroon;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 80px, 200px;
+  justify-content:space-evenly;
+}
+.hand {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: {
+    wrap: wrap;
+    direction: row;
+  }
+  justify-content: space-around;
+  align-items: center;
+}
+middle {
+  display: flex;
+  flex: {
+    wrap: wrap;
+    direction: row;
+}
+  justify-content: space-around;
