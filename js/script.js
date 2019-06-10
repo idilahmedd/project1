@@ -1,38 +1,138 @@
-// var suits = ["spades", "hearts", "clubs", "diams"];
-// var cardFace = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
-// var cards = [];
-// var players = [
-//   [],
-//   []
-// ];
+var suits = ["spades", "hearts", "clubs", "diams"];
+var cardFace = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+var cards = [];
+var players = [[],[]];
+var score;
+var hand;
+const player1 = {
+    deck: [],
+    hand: []
+  }
 // var firstRun = true;
 // var gameover = false;
-// var timer;
 // var r = 0;
-// var fightButton = document.querySelector("#btnBattle");
-// var fightButton10 = document.querySelector("#btnBattle10");
-// var fightButton50 = document.querySelector("#btnBattle50");
+// var deckurl = 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1';
+// var cardDrawsurl = "https://deckofcardsapi.com/api/deck/new/draw/?count=8"
+// var deckID;
+// var deckInfo;
+// var cardsurl;
+// var temp;
 
-// var p1 = document.querySelector("#player1 .hand");
-// var p2 = document.querySelector("#player2 .hand");
-// var s1 = document.querySelector("#player1 .score");
-// var s2 = document.querySelector("#player2 .score");
+// fetch(cardDrawsurl)
+//   .then(function(responseData){
+//     console.log('get cards');
+//     return responseData.json();
+//   })
+//   .then(function(jsonData){
+//     console.log(jsonData);
+//   })
 
-// //event listeners
-// fightButton.addEventListener('click', battle);
-// fightButton10.addEventListener('click', function(){
-//   rounds(10);
+
+// player1Deck = document.getElementById("player1Deck")
+
+//   fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
+//   .then(function(deckData) {
+//     return deckData.json();
+//   })
+//   .then(function(deckJson) {
+//     var deckId = deckJson.deck_id;
+//     console.log(deckId);
+//     fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`)
+//         .then(function(cardData) {
+//             return cardData.json();
+//         })
+//         .then(function(cardJson) {
+//             console.log("drew a card");
+//             console.log(cardJson);
+//             var cardImg = document.createElement('img');
+//             cardImg.src = cardJson.cards[0].image
+//             playerdeck.appendChild(cardImg);
+            
+
+//         })
+
+    
 // });
-// fightButton50.addEventListener('click', function(){
-//   rounds(50);
-// });
-// //functions
-// function rounds(a){
-//   r=a;
-//   timer = setInterval(function(){
-//     battle()
-//   },100);
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // //DOM
+
+
+// // var p1 = document.querySelector("#player1 .hand");
+// // var p2 = document.querySelector("#player2 .hand");
+// // var s1 = document.querySelector("#player1 .score");
+// // var s2 = document.querySelector("#player2 .score");
+
+
+
+
+// // //event listeners
+// // fightButton.addEventListener('click', battle);
+
+
+
+
+// // //functions
+// //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function battle() {
 //   if(timer){
