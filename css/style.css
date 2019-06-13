@@ -133,11 +133,11 @@ a {
   
   display: grid;
   grid-template-rows: 100px 200px 200px 200px 1fr;
-  grid-template-columns: 250px 1fr  250px;
+  grid-template-columns: 250px 1fr 250px;
   grid-template-areas: 
     ". player1 score1"
     "player1Deck hand1 ."
-    "section section section"
+    "helpCards dealButton currentCards"
     ". hand2 player2Deck"
     "score2 player2 .";
 }
@@ -183,17 +183,29 @@ a {
 #player1Deck {
   grid-area: player1Deck;
 }
+#helpCards {
+  grid-area: helpCards;
+}
+#currentCards {
+  grid-area: currentCards;
+}
 #player1Deck img {
   max-width: 50%;
   padding: 0 0 0 44px;
+}
+#helpCards img {
+  max-width: 40%;
+  padding: 0 0 0 190px;
+}
+#currentCards img {
+  max-width: 40%;
+  padding: 0 150px 0 0;
 }
 #player2Deck {
   grid-area: player2Deck;
 }
 
-section {
-  grid-area: section;
-}
+
 .leftStack {
   grid-area: leftStack;
 }
@@ -204,6 +216,7 @@ section {
   /* border: 1px solid red; */
 
 #dealButton {
+  grid-area: dealButton;
   padding-top: 100px;
   text-align: center;
   margin-right: auto;
