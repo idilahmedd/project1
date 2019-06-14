@@ -132,31 +132,43 @@ a {
 .gridBoard {
   
   display: grid;
-  grid-template-rows: 100px 200px 200px 200px 1fr;
+  grid-template-rows: 100px 200px 200px 200px 100px;
   grid-template-columns: 250px 1fr 250px;
   grid-template-areas: 
-    ". player1 score1"
+    "winMessage1 player1 score1"
     "player1Deck hand1 ."
     "helpCards dealButton currentCards"
     ". hand2 player2Deck"
-    "score2 player2 .";
+    "score2 player2 winMessage2";
 }
 #player1 {
   grid-area: player1;
   
 
 }
+#winMessage1 {
+  grid-area: winMessage1;
+}
+#winMessage2 {
+  grid-area: winMessage2;
+}
 #player2 {
   grid-area: player2;
 }
 .score1 {
   grid-area: score1;
-  border: 1px solid black;
+  border: 6px solid maroon;
+  border-radius: 8px;
+  font-size: 22px;
+  color: black;
   
 }
 .score2 {
   grid-area: score2;
-  border: 1px solid black;
+  border: 6px solid maroon;
+  border-radius: 8px;
+  font-size: 22px;
+  color: black;
 }
 .hand1 {
   grid-area: hand1;
@@ -204,8 +216,13 @@ a {
 #player2Deck {
   grid-area: player2Deck;
 }
-
-
+#player2Deck img {
+  max-width: 50%;
+  padding: 0 0 0 44px;
+}
+.hand2 img {
+  max-width:18%;
+}
 .leftStack {
   grid-area: leftStack;
 }
@@ -222,4 +239,7 @@ a {
   margin-right: auto;
   margin-left: auto;
   
+}
+#start {
+
 }

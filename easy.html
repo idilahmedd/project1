@@ -11,12 +11,14 @@
     <div id="background">
         <header>
             <h1>Speed</h1>
+            <button id="reset">Reset</button>
         </header>
         <div class="gridBoard">
+            <div id= "winMessage1"></div>
             <div id="player1" class="players">
                 <p>Player 1</p>
             </div>
-            <div class="score1">Player 1 Score</div>
+            <div class="score1">Player 1 Score:</div>
             <div class="hand1">
                 <img id="card10" class="card">
                 <img id="card11" class="card">
@@ -32,27 +34,33 @@
                 
                 <div id="helpCards" class="leftStack">
                     <img id="help " src="css/cardback.jpg" alt="">
+                    
                 </div>
+
                 <div id="dealButton">
                     <button>Deal Cards</button>
                 </div>
+
                 <div id="currentCards" class="rightStack">
                     <img id="current" src="css/cardback.jpg" alt="">
                 </div>
             
             
             <div class="hand2">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                <img id="card20" src="css/cardback.jpg">
+                <img id="card21" src="css/cardback.jpg">
+                <img id="card22" src="css/cardback.jpg">
+                <img id="card23" src="css/cardback.jpg">
+                <img id="card24" src="css/cardback.jpg">
             </div>
-            <div id= "player2Deck" class="shuffledCards2"></div>
-            <div class="score2">Player 2 Score</div>
+            <div id= "player2Deck" class="shuffledCards2">
+                <img id="Deck2 " src="css/cardback.jpg" alt="">
+            </div>
+            <div class="score2">Player 2 Score:</div>
             <div id="player2" class="players">
                 <p>Player 2</p>
             </div>
+            <div id= "winMessage2"></div>
         </div>            
     </div>
     <script type="text/javascript" src="js/script.js"></script>
