@@ -4,6 +4,8 @@
 Speed card game for Project 1 at General Assembly, SEI-25.
 
 [LIVE SITE](idilahmedd.github.io/project1/).
+<img width="1409" alt="Screen Shot 2019-08-28 at 2 41 32 PM" src="https://user-images.githubusercontent.com/50806842/64729251-a4b23680-d491-11e9-85c1-aca5c3f7a96b.png">
+
 
 ## Wireframes
 
